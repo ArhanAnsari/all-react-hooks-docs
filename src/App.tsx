@@ -1,9 +1,13 @@
 import './App.css'
+import Demo from './hooks-examples/useState-Hook/Demo'
 
 function App() {
 
   return (
-    <div className="flex flex-col justify-center items-center h-screen">Hello World!</div>
+    <div className="container mx-auto p-4">
+      <h1 className="text-4xl font-bold">useState Hook Demo</h1>
+      <Demo />
+    </div>
   )
 }
 
