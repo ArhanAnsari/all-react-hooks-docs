@@ -58,11 +58,11 @@ function ToDoApp() {
             value={taskInput} 
             onChange={(e) => setTaskInput(e.target.value)}
             onKeyDown={(e) => e.key === "Enter" && handleAddTask()}
-            className="flex-grow bg-gray-50 border-2 border-gray-200 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-purple-400 focus:border-transparent transition-all duration-300 ease-in-out placeholder-gray-400 text-gray-700"
+            className="flex-grow bg-gray-50 border-2 border-gray-200 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-purple-400 focus:border-transparent duration-300 ease-in-out placeholder-gray-400 text-gray-700"
           />
 
           <Button onClick={handleAddTask} className="bg-green-500 hover:bg-green-600 text-white">
-            <Plus className="w-5 h-5" />
+            <Plus className="w-4 h-4" />
             <span className="sr-only">Add Task</span>
           </Button>
       </div>
