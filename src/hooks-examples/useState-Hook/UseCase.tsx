@@ -1,8 +1,11 @@
+import ToDoApp from "@/components/ToDoApp"
 
 
 const UseCase = () => {
   return (
-    <div>UseCase</div>
+    <div>
+        <ToDoApp />
+    </div>
   )
 }
 

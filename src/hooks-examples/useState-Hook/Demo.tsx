@@ -1,4 +1,6 @@
-import Counter from "../../components/Counter"
+// import Counter from "../../components/Counter"
+
+import Counter from "@/components/Counter"
 
 const Demo = () => {
   return (
