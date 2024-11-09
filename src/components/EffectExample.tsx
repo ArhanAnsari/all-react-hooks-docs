@@ -4,7 +4,7 @@ function EffectExample() {
   const [count, setCount] = React.useState(0);
 
   React.useEffect(() => {
-    document.title = Count: ${count};
+    document.title = `Count: ${count}`;
   }, [count]);
 
   return (
