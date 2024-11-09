@@ -1,8 +1,19 @@
+import { useState, useEffect } from 'react';
 
-const UseCase = () => {
+function FetchData() {
+  const [data, setData] = useState(null);
+
+  useEffect(() => {
+    fetch('https://example.org/products.json')
+      .then(response => response.json())
+      .then(data => setData(data));
+  }, []);
+
   return (
-    <div>UseCase</div>
-  )
+    <div>
+      <h1>Data: {data ? JSON.stringify(data) : 'Loading...'}</h1>
+    </div>
+  );
 }
 
-export default UseCase
+export default FetchData;

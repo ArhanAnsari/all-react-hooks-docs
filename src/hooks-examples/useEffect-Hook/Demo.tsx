@@ -1,8 +1,18 @@
+import { useState, useEffect } from 'react';
 
-const Demo = () => {
+function Demo() {
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    document.title = `Count: ${count}`;
+  }, [count]);
+
   return (
-    <div>Demo</div>
-  )
+    <div>
+      <p>Count: {count}</p>
+      <button onClick={() => setCount(count + 1)}>Increment</button>
+    </div>
+  );
 }
 
-export default Demo
+export default Demo;
