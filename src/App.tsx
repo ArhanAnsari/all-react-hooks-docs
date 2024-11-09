@@ -14,6 +14,10 @@ function App() {
       <Route path="/" element={<ReactHooksDoc />} />
       <Route path="/app/usestate/counter-app" element={<Demo />} />
       <Route path="/app/usestate/todo-app" element={<UseCase />} />
+      
+      <Route path="/app/useeffect/basic-app" element={<Demo />} />
+      <Route path="/app/useeffect/fetch-data-app" element={<UseCase />} />
+
       <Route path="*" element={<PageNotFound />} />
     </Routes>
   )
