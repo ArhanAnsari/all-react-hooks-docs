@@ -6,6 +6,8 @@ import ReactHooksDoc from './features/docs/ReactHooksDoc';
 import PageNotFound from './pages/404/PageNotFound';
 import Demo from './hooks-examples/useState-Hook/Demo';
 import UseCase from './hooks-examples/useState-Hook/UseCase';
+import useEffectDemo from './hooks-examples/useEffect-Hook/Demo';
+import useEffectFetchData from './hooks-examples/useEffect-Hook/UseCase';
 
 function App() {
 

@@ -92,6 +92,62 @@ const hooksData = [
     },
     realLifeAppPath: "/app/usestate/todo-app",
   },
+  {
+    name: "useEffect",
+    description: "Handles side effects, such as fetching data or setting timers",
+    basicExample: `
+      const [count, setCount] = useState(0);
+      useEffect(() => {
+        document.title = 'Count: ${count}';
+      }, [count]);
+      return (
+        <div>
+          <p>Count: {count}</p>
+          <button onClick={() => setCount(count + 1)}>Increment</button>
+        </div>
+      );
+    `,
+    BasicPreview: () => {
+      const [count, setCount] = useState(0);
+      useEffect(() => {
+        document.title = `Count: ${count}`;
+      }, [count]);
+      return (
+        <div className="text-center">
+          <p className="mb-4 text-[#354f52]">Count: {count}</p>
+          <Button onClick={() => setCount(count + 1)} className="bg-[#52796f] hover:bg-[#84a98c] text-[#cad2c5]">Increment</Button>
+        </div>
+      );
+    },
+    basicAppPath: "/app/useeffect/basic-app",
+    realLifeExample: `
+      const [data, setData] = useState(null);
+      useEffect(() => {
+        fetch('https://example.org/products.json')
+          .then(response => response.json())
+          .then(data => setData(data));
+      }, []);
+      return (
+        <div>
+          <h1>Data: {data ? JSON.stringify(data) : 'Loading...'}</h1>
+        </div>
+      );
+    `,
+    RealLifePreview: () => {
+      const [data, setData] = useState(null);
+      useEffect(() => {
+        fetch('(link unavailable)')
+          .then(response => response.json())
+          .then(data => setData(data));
+      }, []);
+      return (
+        <div className="text-[#354f52]">
+          <h1>Data: {data ? JSON.stringify(data) : 'Loading...'}</h1>
+        </div>
+      );
+    },
+    realLifeAppPath: "/app/useeffect/fetch-data-app",
+  },
 ]
 
 

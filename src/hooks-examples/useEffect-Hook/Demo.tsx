@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-function Demo() {
+function useEffectDemo() {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
@@ -15,4 +15,4 @@ function Demo() {
   );
 }
 
-export default Demo;
+export default useEffectDemo;
