@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-function useEffectUseCase {
+function useEffectUseCase() {
   const [data, setData] = useState(null);
 
   useEffect(() => {
