@@ -136,7 +136,7 @@ const hooksData = [
     RealLifePreview: () => {
       const [data, setData] = useState(null);
       useEffect(() => {
-        fetch('(link unavailable)')
+        fetch('https://example.org/products.json')
           .then(response => response.json())
           .then(data => setData(data));
       }, []);
