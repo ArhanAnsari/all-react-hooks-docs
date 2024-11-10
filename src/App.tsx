@@ -17,9 +17,8 @@ function App() {
       <Route path="/app/usestate/counter-app" element={<Demo />} />
       <Route path="/app/usestate/todo-app" element={<UseCase />} />
       
-      <Route path="/app/useeffect/basic-app" element={<Demo />} />
-      <Route path="/app/useeffect/fetch-data-app" element={<UseCase />} />
-
+      <Route path="/app/useeffect/basic-app" element={<useEffectDemo />} />
+      <Route path="/app/useeffect/fetch-data-app" element={<useEffectUseCase />} />
       <Route path="*" element={<PageNotFound />} />
     </Routes>
   )
