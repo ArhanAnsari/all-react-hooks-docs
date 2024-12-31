@@ -18,8 +18,7 @@ function App() {
       <Route path="/app/usestate/todo-app" element={<UseCase />} />
       
       <Route path="/app/useeffect/basic-app" element={<Demo />} />
-      <Route path="/app/useeffect/fetch-data-app" element={<UseCase />} />
-
+      <Route path="/app/useeffect/fetch-data-app" element={<UseCase />} />
       <Route path="*" element={<PageNotFound />} />
     </Routes>
   )
